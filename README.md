@@ -218,3 +218,80 @@ Cartão Pessoal
 </body>
 </html>
 http://127.0.0.1:5500/index.html
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #1b1035;
+}
+
+.card {
+  background: #ffffff;
+  width: 320px;
+  padding: 32px 24px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 3px solid #7c5cff;
+}
+
+h1 {
+  font-size: 1.4rem;
+  color: #1f2430;
+  margin-bottom: 4px;
+}
+
+.cargo {
+  color: #7c5cff;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.bio {
+  color: #5b6472;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  list-style: none;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #7c5cff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #5a3ce1;
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+    padding: 24px 16px;
+  }
+}
